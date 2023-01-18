@@ -1,9 +1,25 @@
 const common = require('./common');
 
+$('#decrement').on('click', function() {
+    common.genericBtn('dec')
+})
 
-window.onload = () => {
-    const btnDec = document.getElementById('decrement')
-    const btnInc = document.getElementById('increment')
-    btnDec.addEventListener('click', common.genericBtn('dec'))
-    btnInc.addEventListener('click', common.genericBtn('inc'))
-}
+$('#increment').on('click', function() {
+    common.genericBtn('inc')
+})
+
+// document.addEventListener('DOMContentLoaded', () => {
+    // const btnDec = document.getElementById('decrement')
+    // const btnInc = document.getElementById('increment')
+    // $('#decrement').on('click', function() {
+    //     common.genericBtn('dec')
+    // })
+    // btnDec.addEventListener('click', common.genericBtn('dec'))
+    // btnDec.addEventListener('click', () => {
+    //     console.log(common.genericBtn)
+    //     common.genericBtn('dec')
+    // })
+    // btnInc.addEventListener('click', () => {
+    //     common.genericBtn('inc')
+    // })
+// })
