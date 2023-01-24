@@ -1,4 +1,7 @@
+const $ = require('jquery')
 const common = require('./common');
+
+import './style/main.scss';
 
 $('#decrement').on('click', function() {
     common.genericBtn('dec')

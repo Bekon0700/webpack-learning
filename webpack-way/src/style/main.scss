@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -10,6 +12,7 @@
     gap: 15px;
     font-size: 25px;
     font-weight: 500;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(./../imgs/bg-tree.jpeg);
 }
 
 .btn {
@@ -25,6 +28,7 @@
 
 .number {
     padding: 0 30px;
+    color: #fff;
 }
 
 .dec {

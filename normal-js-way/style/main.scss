@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -10,6 +12,8 @@
     gap: 15px;
     font-size: 25px;
     font-weight: 500;
+    // background: url(./../imgs/bg-tree.jpeg) linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(./../imgs/bg-tree.jpeg);
 }
 
 .btn {
@@ -19,12 +23,13 @@
     font-size: 40px;
     font-weight: 500;
     cursor: pointer;
-    box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.75);
     color: white;
 }
 
 .number {
     padding: 0 30px;
+    color: #fff;
 }
 
 .dec {
