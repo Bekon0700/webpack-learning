@@ -1,28 +1,32 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+require('dotenv').config();
 
-const mode = 'dev'
+const mode = process.env.MODE || 'development';
 let pluginsList;
 
 if(mode == 'production') {
     pluginsList = [
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            filename: '../../[name].html'
+            filename: '[name].html'
         }),
         new MiniCssExtractPlugin({
-            filename: '../css/index.[contenthash].css'
+            filename: 'assets/css/index.[contenthash].css'
         })
     ]
-} else if(mode == 'dev') {
+} else if(mode == 'development') {
     pluginsList = [
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            filename: '../../[name].html'
+            filename: '[name].html'
         }),
         new MiniCssExtractPlugin({
-            filename: '../css/index.css'
-        })
+            filename: 'assets/css/index.css'
+        }),
     ]
 }
 
@@ -37,21 +41,21 @@ module.exports = {
                 use: [{
                     loader: MiniCssExtractPlugin.loader,
                     options:{
-                        publicPath: './imgs'
+                        // publicPath: './dist'
                     }
                 },'css-loader', 'sass-loader']
             },
             {
                 test: /\.(png|jpeg|jpg|gif|svg|ico)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            outputPath: '../images/',
-                            name: '[name].[ext]',
-                        }
-                    }
-                ]
+                type: 'asset/resource',
+                // use: [
+                //     {
+                //         options: {
+                //             outputPath: '../images/',
+                //             name: '[name].[ext]',
+                //         }
+                //     }
+                // ]
             }
         ]
     },

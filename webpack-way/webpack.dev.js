@@ -4,8 +4,9 @@ const path = require('path')
 
 module.exports = merge(common, {
     output: {
-        path: path.resolve(__dirname, 'dist/assets/js'),
-        filename: '[name].bundle.js'
+        path: path.resolve(__dirname, 'dist/'),
+        filename: 'assets/js/[name].bundle.js',
+        assetModuleFilename: 'assets/imgs/[name][ext]'
     },
     mode: 'development'
 })
