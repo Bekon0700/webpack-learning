@@ -1,0 +1,53 @@
+// commonmr
+.mx-auto {
+    margin: 0 auto;
+}
+
+// margin x axis
+@each $size in $sizes-80 {
+    .mx-#{$size} {
+        margin-left: #{$size}px;
+        margin-right: #{$size}px;
+    }
+}
+
+// margin y axis
+@each $size in $sizes-80 {
+    .my-#{$size} {
+        margin-top: #{$size}px;
+        margin-bottom: #{$size}px;
+    }
+}
+
+
+// margin
+@each $size in $sizes-80 {
+    .m-#{$size} {
+        margin: #{$size}px;
+    }
+}
+
+// margin-top
+@each $size in $sizes-80 {
+    .mt-#{$size} {
+        margin-top: #{$size}px;
+    }
+}
+// margin-bottom
+@each $size in $sizes-80 {
+    .mb-#{$size} {
+        margin-bottom: #{$size}px;
+    }
+}
+// margin-left
+@each $size in $sizes-80 {
+    ml-#{$size} {
+        margin-left: #{$size}px;
+    }
+}
+// margin-right
+@each $size in $sizes-80 {
+    .mr-#{$size} {
+        margin-right: #{$size}px;
+    }
+}

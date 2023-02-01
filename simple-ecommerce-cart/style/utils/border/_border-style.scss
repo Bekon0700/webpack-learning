@@ -1,0 +1,7 @@
+$styles: solid, dashed, dotted, double, hidden, none;
+
+@each $style in $styles {
+    .border-#{$style} {
+        border-style: #{$style};
+    }
+}

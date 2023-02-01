@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import './base/_base-abstracts';
+
+// utils
+@import './utils/width/width'; // width
+@import './utils/margin/margin'; //margin
+@import './utils/padding/padding'; //padding
+@import './utils/border/_border-abstract'; //border

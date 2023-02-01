@@ -1,0 +1,11 @@
+// border none
+.border-none {
+    border: none;
+}
+
+// border-sizes
+@each $size in $sizes-20 {
+    .border-#{$size} {
+        border-width: #{$size}px;
+    }
+}

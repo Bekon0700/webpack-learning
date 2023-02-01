@@ -1,0 +1,53 @@
+// common
+.px-auto {
+    padding: 0 auto;
+}
+
+// padding x axis
+@each $size in $sizes-80 {
+    .px-#{$size} {
+        padding-left: #{$size}px;
+        padding-right: #{$size}px;
+    }
+}
+
+// padding y axis
+@each $size in $sizes-80 {
+    .py-#{$size} {
+        padding-top: #{$size}px;
+        padding-bottom: #{$size}px;
+    }
+}
+
+
+// padding
+@each $size in $sizes-80 {
+    .p-#{$size} {
+        padding: #{$size}px;
+    }
+}
+
+// padding-top
+@each $size in $sizes-80 {
+    .pt-#{$size} {
+        padding-top: #{$size}px;
+    }
+}
+// padding-bottom
+@each $size in $sizes-80 {
+    .pb-#{$size} {
+        padding-bottom: #{$size}px;
+    }
+}
+// padding-left
+@each $size in $sizes-80 {
+    pl-#{$size} {
+        padding-left: #{$size}px;
+    }
+}
+// padding-right
+@each $size in $sizes-80 {
+    .pr-#{$size} {
+        padding-right: #{$size}px;
+    }
+}

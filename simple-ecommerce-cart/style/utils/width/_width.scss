@@ -1,0 +1,10 @@
+// width auto
+.w-auto {
+    width: auto;
+}
+
+@each $size in $sizes-percentage-5 {
+    .w-#{$size} {
+        width: #{$size*1%};
+    }
+}

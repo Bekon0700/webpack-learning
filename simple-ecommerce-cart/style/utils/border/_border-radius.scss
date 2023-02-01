@@ -1,0 +1,66 @@
+// border round
+.border-round {
+    border-radius: 9999px;
+}
+
+// border radius
+@each $size in $sizes-30 {
+    .border-radius-#{$size} {
+        border-radius: #{$size}px;
+    }
+}
+
+// border top radius
+@each $size in $sizes-30 {
+    .border-t-#{$size} {
+        border-top-left-radius: #{$size}px;
+        border-top-right-radius: #{$size}px;
+    }
+}
+// border left radius
+@each $size in $sizes-30 {
+    .border-l-#{$size} {
+        border-top-left-radius: #{$size}px;
+        border-bottom-left-radius: #{$size}px;
+    }
+}
+// border right radius
+@each $size in $sizes-30 {
+    .border-r-#{$size} {
+        border-top-right-radius: #{$size}px;
+        border-bottom-right-radius: #{$size}px;
+    }
+}
+// border bottom radius
+@each $size in $sizes-30 {
+    .border-b-#{$size} {
+        border-bottom-left-radius: #{$size}px;
+        border-bottom-right-radius: #{$size}px;
+    }
+}
+
+
+// border top-left radius
+@each $size in $sizes-30 {
+    .border-tl-#{$size} {
+        border-top-left-radius: #{$size}px;
+    }
+}
+// border bottom-left radius
+@each $size in $sizes-30 {
+    .border-bl-#{$size} {
+        border-bottom-left-radius: #{$size}px;
+    }
+}
+// border top-right radius
+@each $size in $sizes-30 {
+    .border-tr-#{$size} {
+        border-top-right-radius: #{$size}px;
+    }
+}
+// border bottom-right radius
+@each $size in $sizes-30 {
+    .border-br-#{$size} {
+        border-bottom-right-radius: #{$size}px;
+    }
+}
